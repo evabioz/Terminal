@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	android:id="@+id/terminalFrame" 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+	<LinearLayout
+		android:id="@+id/terminalOSD"
+		android:orientation="vertical"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent">
+		<tw.loli.lunaTerm.GestureView
+			android:id="@+id/gestureView" 
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:longClickable="true"
+			android:layout_weight="1.0" />
+		<com.roiding.rterm.ButtonGallery
+			android:id="@+id/functionKeyGallery" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:spacing="0dp"
+			android:gravity="center" android:visibility="gone" />
+	</LinearLayout>
+
+</FrameLayout>
